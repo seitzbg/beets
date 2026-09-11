@@ -13,9 +13,12 @@ Unreleased
     New features
     ~~~~~~~~~~~~
 
-..
-    Bug fixes
-    ~~~~~~~~~
+Bug fixes
+~~~~~~~~~
+
+- :doc:`plugins/web`: Fix a 500 error when serving album art for albums whose
+  ``artpath`` is stored relative to the library directory; the path is now
+  resolved against the library directory before the file is served.
 
 ..
     For plugin developers
